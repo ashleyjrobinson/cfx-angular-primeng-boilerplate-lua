@@ -9,6 +9,7 @@ repository 'https://github.com/ashleyjrobinson/cfx-angular-primeng-boilerplate-l
 
 client_script "client/**/*.lua"
 server_script "server/**/*.lua"
+shared_script "shared/**/*.lua"
 
 ui_page "web/dist/browser/index.html"
 
