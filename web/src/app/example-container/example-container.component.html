@@ -1,0 +1,24 @@
+<div class="nui-wrapper flex justify-content-center align-items-center min-h-screen">
+	<p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+		<ng-template #header>
+			<img alt="Card" class="w-full" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
+		</ng-template>
+		<ng-template #title>NUI Pop-up!</ng-template>
+		<ng-template #subtitle>Using Angular v19 and PrimeNG v19</ng-template>
+		<p>
+			@if (clientData()) {
+				Returned Data:
+				<code>
+					{{ clientData() | json }}
+				</code>
+			} @else {
+				Client data is yet to be fetched.
+			}
+		</p>
+		<ng-template #footer>
+			<div class="flex gap-4 mt-1">
+				<p-button label="Get Client Data" class="w-full" styleClass="w-full" (click)="handleGetClientData()" />
+			</div>
+		</ng-template>
+	</p-card>
+</div>
